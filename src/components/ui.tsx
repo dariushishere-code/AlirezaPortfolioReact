@@ -42,26 +42,24 @@ export function SectionHeading({
   note?: string;
 }) {
   return (
-    <div className="mb-14 md:mb-20">
+    <div className="mb-14 text-center md:mb-20">
       <Reveal>
-        <div className="flex items-baseline gap-4 font-mono text-[11px] tracking-[0.25em] text-smoke uppercase">
+        <div className="flex items-center justify-center gap-4 font-mono text-[11px] tracking-[0.25em] text-smoke uppercase">
           <span className="text-gold-400">{index}</span>
-          <span className="h-px flex-1 bg-bone/15" aria-hidden />
+          <span className="h-px w-12 bg-bone/15" aria-hidden />
           <span className="normal-case tracking-[0.2em] text-smoke-deep">{jp}</span>
         </div>
       </Reveal>
-      <div className="mt-6 flex flex-wrap items-end justify-between gap-6">
-        <Reveal delay={0.08}>
-          <h2 className="font-display text-4xl leading-[0.95] font-bold tracking-tight text-bone sm:text-6xl lg:text-7xl">
-            {title}
-          </h2>
+      <Reveal delay={0.08}>
+        <h2 className="mx-auto mt-6 max-w-4xl font-display text-4xl leading-[0.95] font-bold tracking-tight text-bone sm:text-6xl lg:text-7xl">
+          {title}
+        </h2>
+      </Reveal>
+      {note ? (
+        <Reveal delay={0.16}>
+          <p className="mx-auto mt-6 max-w-xl font-mono text-xs leading-relaxed text-smoke">{note}</p>
         </Reveal>
-        {note ? (
-          <Reveal delay={0.16}>
-            <p className="max-w-xs font-mono text-xs leading-relaxed text-smoke">{note}</p>
-          </Reveal>
-        ) : null}
-      </div>
+      ) : null}
     </div>
   );
 }

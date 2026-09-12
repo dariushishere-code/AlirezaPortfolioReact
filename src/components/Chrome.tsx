@@ -51,8 +51,8 @@ export function CustomCursor() {
       const t = e.target as HTMLElement | null;
       const interactive = !!t?.closest("a, button, input, textarea, [data-hover]");
       targetScale = interactive ? 2 : 1;
-      ring.style.borderColor = interactive ? "rgba(240,198,120,0.95)" : "rgba(228,172,82,0.5)";
-      ring.style.backgroundColor = interactive ? "rgba(228,172,82,0.08)" : "transparent";
+      ring.style.borderColor = interactive ? "rgba(147,197,253,0.95)" : "rgba(96,165,250,0.5)";
+      ring.style.backgroundColor = interactive ? "rgba(96,165,250,0.1)" : "transparent";
     };
 
     const onLeave = () => {
@@ -92,7 +92,7 @@ export function CustomCursor() {
       <div
         ref={ringRef}
         className="pointer-events-none fixed left-0 top-0 z-[90] h-9 w-9 rounded-full border opacity-0 transition-opacity duration-300 will-change-transform"
-        style={{ borderColor: "rgba(228,172,82,0.5)" }}
+        style={{ borderColor: "rgba(96,165,250,0.5)" }}
         aria-hidden
       />
     </>

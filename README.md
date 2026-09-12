@@ -18,7 +18,7 @@ Dark, motion-heavy portfolio for a front-end developer & photographer.
 
 ## Routes
 
-- `/` — Home (Hero, About, Work, Resume, Contact + WebGL scene)
+- `/` — Home (Hero, About, Work, Resume, Contact + particle-drift canvas)
 - `/gallery` — Photography archive with the VengeanceUI cylinder carousel
 
 SPA fallback for `/gallery` is handled by `public/_redirects` (and `netlify.toml` for Netlify deploys).
@@ -28,7 +28,7 @@ SPA fallback for `/gallery` is handled by `public/_redirects` (and `netlify.toml
 ```
 src/
   App.tsx                        # routes + hash-aware scroll restoration
-  components/                    # Nav, Hero, About, Projects, Resume, Contact, Footer, Scene, ui/
+  components/                    # Nav, Hero, About, Projects, Resume, Contact, Footer, ui/
   components/ui/cylinder-carousel.tsx  # VengeanceUI "cylinder" carousel
   data/content.ts                # nav links, gallery images, projects, socials
   pages/GalleryPage.tsx          # /gallery route

@@ -24,7 +24,7 @@ export default function Footer() {
         ))}
       </Marquee>
 
-      <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-5 py-8 sm:px-8 md:flex-row md:items-center">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6 px-5 py-8 text-center sm:px-8">
         <p className="font-mono text-[11px] tracking-[0.2em] text-smoke uppercase">
           © 2026 {identity.name} — <span className="text-smoke-deep">precision, contrast, deliberate space.</span>
         </p>

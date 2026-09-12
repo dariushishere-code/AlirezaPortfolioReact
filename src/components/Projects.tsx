@@ -66,7 +66,7 @@ function JuniorPathVisual() {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(60% 60% at 28% 28%, rgba(96,165,250,0.28), transparent 70%), radial-gradient(55% 55% at 72% 72%, rgba(228,172,82,0.22), transparent 70%)",
+            "radial-gradient(60% 60% at 28% 28%, rgba(96,165,250,0.28), transparent 70%), radial-gradient(55% 55% at 72% 72%, rgba(59,130,246,0.22), transparent 70%)",
         }}
       />
       {/* winding career path */}
@@ -74,15 +74,15 @@ function JuniorPathVisual() {
         <path
           d="M14 186 C64 158, 36 116, 92 96 S168 60, 138 18"
           fill="none"
-          stroke="rgba(240,198,120,0.6)"
+          stroke="rgba(147,197,253,0.6)"
           strokeWidth="2.5"
           strokeDasharray="1 7"
           strokeLinecap="round"
         />
         <circle cx="14" cy="186" r="5" fill="#60a5fa" />
-        <circle cx="92" cy="96" r="5" fill="#e4ac52" />
-        <circle cx="138" cy="18" r="6.5" fill="#f7dda4" />
-        <path d="M138 10 l16 -8 -3 19 z" fill="#f7dda4" />
+        <circle cx="92" cy="96" r="5" fill="#3b82f6" />
+        <circle cx="138" cy="18" r="6.5" fill="#93c5fd" />
+        <path d="M138 10 l16 -8 -3 19 z" fill="#93c5fd" />
       </svg>
       <p className="relative font-mono text-[8px] tracking-[0.3em] text-sky-300/90 uppercase">JuniorPath · Career tracking</p>
     </div>
@@ -153,7 +153,7 @@ export default function Projects() {
           <AgentBentoGrid items={cards} />
         </Reveal>
         <Reveal delay={0.1}>
-          <div className="mt-10 flex flex-wrap items-center justify-between gap-4">
+          <div className="mt-10 flex flex-col items-center justify-center gap-5 text-center">
             <p className="font-mono text-[11px] tracking-[0.22em] text-smoke-deep uppercase">
               04 projects — two live on Netlify
             </p>

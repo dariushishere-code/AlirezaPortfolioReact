@@ -76,27 +76,16 @@ export default function App() {
   return (
     <BrowserRouter>
       <div className="relative min-h-screen text-bone antialiased">
-        {/* redesigned fixed backdrop — particle-drift field tinted gold for the ink palette */}
+        {/* full-viewport particle-drift background — the dark Zenith canvas, exactly as designed */}
         <div aria-hidden className="fixed inset-0 -z-10">
           <ParticleDrift
             mode="dark"
+            speed={1}
+            density={1}
+            length={1}
+            opacity={0.9}
             className="h-full w-full"
-            hue={-160}
-            saturation={0.95}
-            brightness={1.06}
-            speed={0.85}
-            density={0.9}
-            length={1.1}
-            opacity={0.92}
           />
-          <div
-            className="pointer-events-none absolute inset-0"
-            style={{
-              background:
-                "radial-gradient(52% 44% at 78% 30%, rgba(228,172,82,0.10), transparent 70%), radial-gradient(46% 40% at 12% 82%, rgba(110,142,160,0.12), transparent 70%), linear-gradient(180deg, rgba(6,8,12,0.45) 0%, rgba(6,8,12,0.6) 55%, transparent 100%)",
-            }}
-          />
-          <div className="pointer-events-none absolute inset-0 grid-bg opacity-40" />
         </div>
 
         <Preloader />

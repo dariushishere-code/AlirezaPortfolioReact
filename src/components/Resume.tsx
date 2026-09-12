@@ -53,12 +53,12 @@ export default function Resume() {
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-12">
           {/* sticky rail */}
           <div className="lg:col-span-4">
-            <div className="lg:sticky lg:top-32">
+            <div className="flex flex-col items-center text-center lg:sticky lg:top-32">
               <Reveal>
                 <p className="text-base leading-relaxed text-bone-dim">{resume.intro}</p>
               </Reveal>
               <Reveal delay={0.1}>
-                <div className="mt-8 flex flex-col gap-3">
+                <div className="mt-8 flex w-full max-w-xs flex-col gap-3">
                   <a
                     href={identity.resumeUrl}
                     target="_blank"

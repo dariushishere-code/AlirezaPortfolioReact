@@ -55,7 +55,7 @@ export default function GalleryPage() {
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(55% 46% at 50% 42%, rgba(110,142,160,0.18), transparent 70%), radial-gradient(42% 40% at 76% 64%, rgba(228,172,82,0.12), transparent 70%)",
+              "radial-gradient(55% 46% at 50% 42%, rgba(96,165,250,0.16), transparent 70%), radial-gradient(42% 40% at 76% 64%, rgba(59,130,246,0.1), transparent 70%)",
           }}
         />
         {/* starfield */}
@@ -91,7 +91,7 @@ export default function GalleryPage() {
       {/* footer strip */}
       <div className="mx-auto max-w-7xl px-5 py-8 sm:px-8">
         <Reveal>
-          <div className="flex flex-col gap-3 border-t hairline pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col items-center gap-3 border-t hairline pt-6 text-center">
             <p className="font-mono text-[10px] tracking-[0.22em] text-smoke-deep uppercase">
               Every frame from <span className="text-gold-500">/public/webp</span> — list additions in{" "}
               <span className="text-gold-500">src/data/content.ts</span>
